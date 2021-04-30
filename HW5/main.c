@@ -1,6 +1,6 @@
-#include<xc.h>           // processor SFR definitions
-#include<sys/attribs.h>  // __ISR macro
-#include<stdio.h>
+#include <xc.h>           // processor SFR definitions
+#include <sys/attribs.h>  // __ISR macro
+#include <stdio.h>
 
 // DEVCFG0
 #pragma config DEBUG = OFF // disable debugging

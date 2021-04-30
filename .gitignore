@@ -1,10 +1,5 @@
-/HW4/build/
-/HW4/dist/
-/HW4/.generated_files/
-/HW4/debug/
-/HW4/nbproject/
-/HW5/build/
-/HW5/dist/
-/HW5/.generated_files/
-/HW5/debug/
-/HW5/nbproject/
+/*/build/
+/*/dist/
+/*/.generated_files/
+/*/debug/
+/*/nbproject/
