@@ -87,7 +87,18 @@ int main()
     //set B4 as input
     TRISBbits.TRISB4 = 1;
     
+    //I2C setup
     i2c_master_setup();
+    i2c_master_start();
+    i2c_master_send(0x40);          // set address
+    i2c_master_send(0x00);          // set register IODIRA
+    i2c_master_send(0x00);          // set outputs
+    i2c_master_stop();
+    i2c_master_start();
+    i2c_master_send(0x40);          // set address
+    i2c_master_send(0x01);          // set register IODIRB
+    i2c_master_send(0xFF);          // set inputs
+    i2c_master_stop(); 
     
     __builtin_enable_interrupts();
 
